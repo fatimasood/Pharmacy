@@ -1,0 +1,1130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="650dp"
+    android:background="@color/white"
+    android:padding="1dp"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="409dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:background="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/imageButtonback"
+            android:layout_width="31dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="28dp"
+            android:background="#00FFFFFF"
+            android:minWidth="28dp"
+            android:minHeight="48dp"
+            android:padding="1dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/hHealthinfo"
+            android:layout_width="133dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="28dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:paddingStart="15dp"
+            android:text="Health Info"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageButtonback"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextContrastCheck" />
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="366dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="7dp"
+            android:background="#FFFFFF"
+            app:queryHint="Search Here"
+            android:iconifiedByDefault="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hHealthinfo" />
+
+        <TextView
+            android:id="@+id/dash"
+            android:layout_width="133dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:paddingStart="15dp"
+            android:text="Health Info"
+            android:textColor="@color/blue"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="TextContrastCheck"
+            tools:layout_editor_absoluteX="249dp"
+            tools:layout_editor_absoluteY="28dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/scrollHori"
+        android:layout_width="408dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:padding="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            android:weightSum="26">
+
+            <Button
+                android:id="@+id/btnA"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/rcorner"
+                android:padding="2dp"
+                android:text="A"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/btnB"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/rcorner"
+                android:paddingLeft="3dp"
+                android:text="B"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+            <Button
+                android:id="@+id/btnC"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/rcorner"
+                android:padding="2dp"
+                android:text="C"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/btnD"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/rcorner"
+                android:padding="2dp"
+                android:text="D"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/btnE"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/rcorner"
+                android:padding="2dp"
+                android:text="E"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/btnF"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/rcorner"
+                android:padding="2dp"
+                android:text="F"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/btnG"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/rcorner"
+                android:padding="2dp"
+                android:text="G"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/btnH"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/rcorner"
+                android:padding="2dp"
+                android:text="H"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btnI"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/rcorner"
+                android:padding="2dp"
+                android:text="I"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btnJ"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/rcorner"
+                android:padding="2dp"
+                android:text="J"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btnK"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/rcorner"
+                android:padding="2dp"
+                android:text="K"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btnL"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/rcorner"
+                android:padding="2dp"
+                android:text="L"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btnM"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/rcorner"
+                android:padding="2dp"
+                android:text="M"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btnN"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/rcorner"
+                android:padding="2dp"
+                android:text="N"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btnO"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/rcorner"
+                android:padding="2dp"
+                android:text="O"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btnP"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/rcorner"
+                android:padding="2dp"
+                android:text="P"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btnQ"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/rcorner"
+                android:padding="2dp"
+                android:text="Q"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btnR"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/rcorner"
+                android:padding="2dp"
+                android:text="R"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btnS"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/rcorner"
+                android:padding="2dp"
+                android:text="S"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btnT"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/rcorner"
+                android:padding="2dp"
+                android:text="T"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btnU"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/rcorner"
+                android:padding="2dp"
+                android:text="U"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btnV"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/rcorner"
+                android:padding="2dp"
+                android:text="V"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/btnW"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/rcorner"
+                android:padding="2dp"
+                android:text="W"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btnX"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/rcorner"
+                android:padding="2dp"
+                android:text="X"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btnY"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/rcorner"
+                android:padding="2dp"
+                android:text="Y"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btnZ"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:background="@drawable/rcorner"
+                android:padding="2dp"
+                android:text="Z"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="4dp"
+        android:padding="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollHori"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="4dp"
+            android:weightSum="26">
+
+            <TextView
+                android:id="@+id/Ahea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/A1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:minHeight="28dp"
+                android:text="Asthma"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/A2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:minHeight="28dp"
+                android:text="Adenoviruses Infection"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/Bhead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="B"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/B1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:minHeight="28dp"
+                android:text="Blood Clot"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/B2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:minHeight="28dp"
+                android:text="Blood Disorders"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/Chead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="C"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/C1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:minHeight="28dp"
+                android:text="CKD (Kidney Disease)"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/C2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:minHeight="28dp"
+                android:text="Cancer"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/Dhead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="D"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/D1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:minHeight="28dp"
+                android:text="Diabetes"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/D2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:minHeight="28dp"
+                android:text="Dog Bites"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/Ehead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="E"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/E1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:minHeight="28dp"
+                android:text="Extreme Cold [Hypothermia]"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/E2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:minHeight="28dp"
+                android:text="Ear Infection [Otitis Media]"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/Fhead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="F"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/F1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:minHeight="28dp"
+                android:text="Flu"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/F2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:minHeight="28dp"
+                android:text="Food Poisoning"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/Ghead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="G"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/G1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:minHeight="28dp"
+                android:text="GAE (Acanthamoeba) (Granulomatous Amebic Encephalitis (Acanthamoeba))"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/Hhead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="H"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/H1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:minHeight="28dp"
+                android:text="Hearing Loss in Children"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/H2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:minHeight="28dp"
+                android:text="Heat Stress"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/Ihead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="I"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/I1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:minHeight="28dp"
+                android:text="IBD (Inflammatory Bowel Disease)"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/Jhead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="J"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/J1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:minHeight="28dp"
+                android:text="Jamestown Canyon Virus Infection"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/Khead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="K"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/K1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:minHeight="28dp"
+                android:text="Kidney Disease (CKD)"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/Lhead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="L"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/L1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:minHeight="28dp"
+                android:text="Lung Cancer"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/Mhead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="M"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/M1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:minHeight="28dp"
+                android:text="Malaria"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/Nhead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="N"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/N1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:minHeight="28dp"
+                android:text="Nocardia asteroides Infection"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/Ohead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="O"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/O1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:minHeight="28dp"
+                android:text="OverWeight and Obesity"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/Phead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="P"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/P1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:minHeight="28dp"
+                android:text="Pneumonia"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/Qhead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Q"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Q1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:minHeight="28dp"
+                android:text="Q Fever"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/Rhead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="R"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/R1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:minHeight="28dp"
+                android:text="RBF (Rat-Bite Fever)"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/Shead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="S"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/S1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:minHeight="28dp"
+                android:text="Skin Cancer"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/Thead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="T"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/T1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:minHeight="28dp"
+                android:text="TB"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/Uhead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="U"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/U1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:minHeight="28dp"
+                android:text="No listed"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/Vhead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="V"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/V1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:minHeight="28dp"
+                android:text="No listed"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/Whead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="W"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/W1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:minHeight="28dp"
+                android:text="No listed"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/Xhead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="X"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/X1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:minHeight="28dp"
+                android:text="No listed"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/Yhead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Y"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Y1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:minHeight="28dp"
+                android:text="Yellow Fever"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/Zhead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Z"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Z1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:minHeight="28dp"
+                android:text="No listed"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

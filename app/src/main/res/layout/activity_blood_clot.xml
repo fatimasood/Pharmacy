@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="3dp"
+    tools:context=".bloodClot">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="405dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="31dp"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toTopOf="@+id/Ahea"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/imageButtonback"
+            android:layout_width="31dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="28dp"
+            android:background="#00FFFFFF"
+            android:minWidth="28dp"
+            android:minHeight="48dp"
+            android:padding="1dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/hHealthinfo"
+            android:layout_width="133dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="28dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:paddingStart="15dp"
+            android:text="Health Info"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageButtonback"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextContrastCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/sViewAs"
+        android:layout_width="411dp"
+        android:layout_height="598dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:id="@+id/l_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hAsthma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingLeft="7dp"
+                android:text="Asthma"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+            <TextView
+                android:id="@+id/Asthmadef"
+                android:layout_width="match_parent"
+                android:layout_height="92dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:padding="15dp"
+                android:paddingTop="0dp"
+                android:text="@string/defAsthma"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+            <TextView
+                android:id="@+id/hSymp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingLeft="7dp"
+                android:text="Sympotoms"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+            <TextView
+                android:id="@+id/sympAsthma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="14dp"
+                android:paddingStart="15dp"
+                android:text="@string/sympo"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+            <TextView
+                android:id="@+id/hsigns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingLeft="7dp"
+                android:text="@string/t6Asthma"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+            <TextView
+                android:id="@+id/signAsthma1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="4dp"
+                android:paddingStart="15dp"
+                android:text="@string/t7Asthma"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+            <TextView
+                android:id="@+id/signAsthma2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="4dp"
+                android:paddingStart="15dp"
+                android:text="@string/t8Asthma"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+            <TextView
+                android:id="@+id/signAsthma3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="4dp"
+                android:paddingStart="15dp"
+                android:text="@string/t9Asthma"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+            <TextView
+                android:id="@+id/situation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingLeft="7dp"
+                android:text="@string/t1Asthma"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+            <TextView
+                android:id="@+id/sit1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="3dp"
+                android:paddingStart="15dp"
+                android:text="@string/t2Asthma"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+            <TextView
+                android:id="@+id/sit2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="3dp"
+                android:paddingStart="15dp"
+                android:text="@string/t3Asthma"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+            <TextView
+                android:id="@+id/sit3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="3dp"
+                android:paddingStart="15dp"
+                android:text="@string/t4Asthma"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+
+            <TextView
+                android:id="@+id/sit4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="7dp"
+                android:paddingStart="15dp"
+                android:text="@string/t5Asthma"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

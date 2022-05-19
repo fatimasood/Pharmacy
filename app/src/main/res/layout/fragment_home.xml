@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.home.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="409dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:background="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/imageButtonback"
+            android:layout_width="31dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="28dp"
+            android:background="#00FFFFFF"
+            android:minWidth="28dp"
+            android:minHeight="48dp"
+            android:padding="1dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/AllDeals"
+            android:layout_width="133dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="28dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:paddingStart="15dp"
+            android:text="All Deals"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageButtonback"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextContrastCheck" />
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="366dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="7dp"
+            android:background="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hHealthinfo" />
+
+        <ImageButton
+            android:id="@+id/chatimageb"
+            android:layout_width="31dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="304dp"
+            android:layout_marginTop="20dp"
+            android:background="#00FFFFFF"
+            android:minWidth="28dp"
+            android:minHeight="48dp"
+            android:padding="1dp"
+            android:src="@drawable/ic_baseline_chat_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck" />
+
+        <ImageButton
+            android:id="@+id/shoppingImageb"
+            android:layout_width="31dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="344dp"
+            android:layout_marginTop="20dp"
+            android:background="#00FFFFFF"
+            android:minWidth="28dp"
+            android:minHeight="48dp"
+            android:padding="1dp"
+            android:src="@drawable/ic_baseline_shopping_cart_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/text_home"
+            android:layout_width="67dp"
+            android:layout_height="5dp"
+            android:layout_marginStart="168dp"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+        <ImageButton
+            android:id="@+id/supp"
+            android:layout_width="91dp"
+            android:layout_height="74dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:background="#05FFFFFF"
+            android:padding="2dp"
+            android:src="@drawable/img_4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/prsnlCare"
+            android:layout_width="99dp"
+            android:layout_height="74dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="#05FFFFFF"
+            android:padding="2dp"
+            android:src="@drawable/img_6"
+            app:layout_constraintStart_toEndOf="@+id/supp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/Device"
+            android:layout_width="102dp"
+            android:layout_height="81dp"
+            android:layout_marginStart="26dp"
+            android:layout_weight="1"
+            android:background="#05FFFFFF"
+            android:padding="2dp"
+            android:src="@drawable/img_7"
+            app:layout_constraintStart_toEndOf="@+id/prsnlCare"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/TetSuple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Supplements"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/supp" />
+
+        <TextView
+            android:id="@+id/Textcare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="42dp"
+            android:text="Personal Care"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/supp"
+            app:layout_constraintTop_toBottomOf="@+id/prsnlCare" />
+
+        <TextView
+            android:id="@+id/TextDevices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="53dp"
+            android:text="Devices"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/Textcare"
+            app:layout_constraintTop_toBottomOf="@+id/Device" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/recomend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:text="Recommended For You"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="404dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="152dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout0"
+            android:layout_width="wrap_content"
+            android:layout_height="210dp"
+            android:padding="3dp"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageButton
+                android:id="@+id/devSuger"
+                android:layout_width="144dp"
+                android:layout_height="139dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="#05FFFFFF"
+                android:padding="2dp"
+                android:paddingLeft="5dp"
+                android:src="@drawable/img_8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck,DuplicateClickableBoundsCheck" />
+
+            <ImageButton
+                android:id="@+id/medStomach"
+                android:layout_width="142dp"
+                android:layout_height="139dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="#05FFFFFF"
+                android:padding="2dp"
+                android:src="@drawable/img_9"
+                app:layout_constraintStart_toEndOf="@+id/devSuger"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/medStomach2"
+                android:layout_width="142dp"
+                android:layout_height="139dp"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="#05FFFFFF"
+                android:padding="2dp"
+                android:src="@drawable/img_10"
+                app:layout_constraintStart_toEndOf="@+id/medStomach"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/Textstomach2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="3dp"
+                android:text="Nexum"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/Textstomach1"
+                app:layout_constraintTop_toBottomOf="@+id/medStomach2" />
+
+            <TextView
+                android:id="@+id/Textstomach1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="6dp"
+                android:text="Tummy Ache Relief Liquid"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/Textdevice"
+                app:layout_constraintTop_toBottomOf="@+id/medStomach" />
+
+            <TextView
+                android:id="@+id/Textdevice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="3dp"
+                android:text="Diabetes Testing Kit"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/devSuger" />
+
+            <TextView
+                android:id="@+id/StomachTPrice2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="13dp"
+                android:layout_marginBottom="10dp"
+                android:text="$250"
+                android:textColor="@color/blue"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/StomachTPrice1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="116dp"
+                android:layout_marginBottom="10dp"
+                android:text="$200"
+                android:textColor="@color/blue"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/StomachTPrice2" />
+
+            <TextView
+                android:id="@+id/PriceSugar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="$550"
+                android:textColor="@color/blue"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/rating1" />
+
+            <ImageButton
+                android:id="@+id/rating3"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="320dp"
+                android:layout_weight="1"
+                android:background="#05FFFFFF"
+                android:padding="2dp"
+                android:paddingLeft="5dp"
+                android:src="@drawable/ic_baseline_star_rate_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <ImageButton
+                android:id="@+id/rating2"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="160dp"
+                android:layout_weight="1"
+                android:background="#05FFFFFF"
+                android:padding="2dp"
+                android:paddingLeft="5dp"
+                android:src="@drawable/ic_baseline_star_rate_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <ImageButton
+                android:id="@+id/rating1"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:background="#05FFFFFF"
+                android:padding="2dp"
+                android:paddingLeft="5dp"
+                android:src="@drawable/ic_baseline_star_rate_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/ratSuger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginBottom="12dp"
+                android:text="4.5"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/rating1" />
+
+            <TextView
+                android:id="@+id/ratSto1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="4.4"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/rating2" />
+
+            <TextView
+                android:id="@+id/ratSto2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="4.0"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/rating3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="408dp"
+        android:layout_height="169dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:paddingTop="7dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:paddingTop="7dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/medKidnol1"
+                    android:layout_width="144dp"
+                    android:layout_height="139dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="1"
+                    android:background="#05FFFFFF"
+                    android:padding="2dp"
+                    android:paddingLeft="5dp"
+                    android:src="@drawable/img_12"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <ImageButton
+                    android:id="@+id/alRelifmed2"
+                    android:layout_width="144dp"
+                    android:layout_height="139dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="1"
+                    android:background="#05FFFFFF"
+                    android:paddingLeft="3dp"
+                    android:paddingTop="7dp"
+                    android:padding="2dp"
+                    android:src="@drawable/img_13"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/Clayout"
+                android:layout_width="408dp"
+                android:layout_height="71dp"
+                android:padding="5dp"
+                app:layout_constraintBottom_toTopOf="@+id/md1Name"
+                app:layout_constraintTop_toTopOf="@+id/md1Name">
+
+
+                <TextView
+                    android:id="@+id/Kidnoltext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:paddingLeft="5dp"
+                    android:text="Kidnol Tablets"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toTopOf="@+id/md1Name"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                    android:id="@+id/Kidnol"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="208dp"
+                    android:layout_marginBottom="13dp"
+                    android:background="@drawable/rcorner"
+                    android:text="Add to Cart"
+                    android:textColor="@color/white"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/clearText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="100dp"
+                    android:layout_marginBottom="12dp"
+                    android:paddingLeft="5dp"
+                    android:text="Allergy Relief"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toTopOf="@+id/panadolprice"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/allergy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="144dp"
+                    android:layout_marginBottom="27dp"
+                    android:paddingLeft="5dp"
+                    android:text="200PKR"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/md1Name" />
+
+                <Button
+                    android:id="@+id/md1Name"
+                    android:layout_width="83dp"
+                    android:layout_height="26dp"
+                    android:layout_marginEnd="22dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/rcorner"
+                    android:text="Add to Cart"
+                    android:textColor="@color/white"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/md1Price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginBottom="22dp"
+                    android:paddingLeft="5dp"
+                    android:text="450PKR"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/panadolprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="223dp"
+                    android:layout_marginEnd="145dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingLeft="5dp"
+                    android:text="150PKR"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/Kidnol"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/clearText" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:paddingTop="7dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/panadol"
+                    android:layout_width="144dp"
+                    android:layout_height="139dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="1"
+                    android:background="#05FFFFFF"
+                    android:padding="2dp"
+                    android:paddingLeft="5dp"
+                    android:src="@drawable/img_14"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <ImageButton
+                    android:id="@+id/clearEyes"
+                    android:layout_width="144dp"
+                    android:layout_height="139dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="1"
+                    android:background="#05FFFFFF"
+                    android:paddingLeft="3dp"
+                    android:paddingTop="7dp"
+                    android:padding="2dp"
+                    android:src="@drawable/img_15"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ConsLay"
+                android:layout_width="408dp"
+                android:layout_height="71dp"
+                android:padding="5dp"
+                app:layout_constraintBottom_toTopOf="@+id/md1Name"
+                app:layout_constraintTop_toTopOf="@+id/md1Name">
+
+
+                <TextView
+                    android:id="@+id/paadolText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:paddingLeft="5dp"
+                    android:text="Panadol"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toTopOf="@+id/md1Name"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/panaPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:paddingLeft="5dp"
+                    android:text="160PKR"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/paadolText" />
+
+                <Button
+                    android:id="@+id/addCart"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/rcorner"
+                    android:text="Add to Cart"
+                    android:textColor="@color/white"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/clearEyePrice"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/clearEyetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="132dp"
+                    android:layout_marginBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:text="Clear Eye"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toTopOf="@+id/md1Name"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/clearEyePrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="204dp"
+                    android:layout_marginTop="4dp"
+                    android:paddingLeft="5dp"
+                    android:text="360PKR"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/paadolText" />
+
+                <Button
+                    android:id="@+id/panadolcart"
+                    android:layout_width="83dp"
+                    android:layout_height="26dp"
+                    android:layout_marginEnd="216dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/rcorner"
+                    android:text="Add to Cart"
+                    android:textColor="@color/white"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1092599240272",
+    "project_id": "the-pharma-best",
+    "storage_bucket": "the-pharma-best.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1092599240272:android:5192deead52c964fe9a355",
+        "android_client_info": {
+          "package_name": "com.example.thepharmabest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1092599240272-q2j5uljiuf051q78mddhd0grcqilo7ns.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQQ9oaWwhCqClUp-oAMK9iwg805zeSo9E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1092599240272-q2j5uljiuf051q78mddhd0grcqilo7ns.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

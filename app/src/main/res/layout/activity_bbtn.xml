@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bbtn">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="80dp"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toTopOf="@+id/B_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/imageButtonbackB"
+            android:layout_width="31dp"
+            android:layout_height="24dp"
+            android:background="#00FFFFFF"
+            android:minWidth="28dp"
+            android:minHeight="48dp"
+            android:padding="1dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck"
+            tools:layout_editor_absoluteX="14dp"
+            tools:layout_editor_absoluteY="28dp" />
+
+        <TextView
+            android:id="@+id/hHealthinfo"
+            android:layout_width="133dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:paddingStart="15dp"
+            android:text="Health Info"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:ignore="TextContrastCheck"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="28dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/B_1"
+        android:layout_width="408dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="547dp"
+        android:clickable="true"
+        android:minHeight="28dp"
+        android:onClick="ClickB"
+        android:padding="7dp"
+        android:text="Blood Clot"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/B_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:clickable="true"
+        android:minHeight="28dp"
+        android:onClick="Clickb"
+        android:padding="7dp"
+        android:text="Blood Disorders"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/B_1"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/Bhea"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="39dp"
+        android:padding="7dp"
+        android:text="B"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
